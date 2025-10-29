@@ -1,0 +1,55 @@
+[0.019s] Invoking command in '/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/turtlebot3_ws/install/turtlebot3_teleop:/home/student/turtlebot3_ws/install/turtlebot3_parcours:/home/student/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/student/Documents/j2/ros2_JOUR2/ros2_ws/src/my_first_robot -DCMAKE_INSTALL_PREFIX=/home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.140s] -- The CXX compiler identification is GNU 11.4.0
+[0.154s] -- Detecting C compiler ABI info
+[0.237s] -- Detecting C compiler ABI info - done
+[0.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.246s] -- Detecting C compile features
+[0.247s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.342s] -- Detecting CXX compiler ABI info - done
+[0.354s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.355s] -- Detecting CXX compile features
+[0.355s] -- Detecting CXX compile features - done
+[0.361s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.560s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.690s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[0.708s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[0.767s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.776s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.788s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.807s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.839s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.932s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.934s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.934s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.011s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.016s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.128s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.162s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.211s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.227s] -- Looking for pthread.h
+[1.316s] -- Looking for pthread.h - found
+[1.316s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.398s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.401s] -- Found Threads: TRUE  
+[1.722s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[1.722s]   By not providing "Findjoint_state_publisher_gui.cmake" in CMAKE_MODULE_PATH
+[1.722s]   this project has asked CMake to find a package configuration file provided
+[1.722s]   by "joint_state_publisher_gui", but CMake did not find one.
+[1.722s] 
+[1.722s]   Could not find a package configuration file provided by
+[1.722s]   "joint_state_publisher_gui" with any of the following names:
+[1.723s] 
+[1.723s]     joint_state_publisher_guiConfig.cmake
+[1.723s]     joint_state_publisher_gui-config.cmake
+[1.723s] 
+[1.723s]   Add the installation prefix of "joint_state_publisher_gui" to
+[1.723s]   CMAKE_PREFIX_PATH or set "joint_state_publisher_gui_DIR" to a directory
+[1.723s]   containing one of the above files.  If "joint_state_publisher_gui" provides
+[1.723s]   a separate development package or SDK, be sure it has been installed.
+[1.723s] 
+[1.723s] [0m
+[1.723s] -- Configuring incomplete, errors occurred!
+[1.723s] See also "/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot/CMakeFiles/CMakeOutput.log".
+[1.731s] Invoked command in '/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/turtlebot3_ws/install/turtlebot3_teleop:/home/student/turtlebot3_ws/install/turtlebot3_parcours:/home/student/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/student/Documents/j2/ros2_JOUR2/ros2_ws/src/my_first_robot -DCMAKE_INSTALL_PREFIX=/home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot

@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/turtlebot3_ws/install/turtlebot3_teleop:/home/student/turtlebot3_ws/install/turtlebot3_parcours:/home/student/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot -- -j8 -l8
+[0.065s] Invoked command in '/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/turtlebot3_ws/install/turtlebot3_teleop:/home/student/turtlebot3_ws/install/turtlebot3_parcours:/home/student/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot -- -j8 -l8
+[0.077s] Invoking command in '/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/turtlebot3_ws/install/turtlebot3_teleop:/home/student/turtlebot3_ws/install/turtlebot3_parcours:/home/student/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot
+[0.087s] -- Install configuration: ""
+[0.087s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot//launch
+[0.087s] -- Installing: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot//launch/01_2r_robot.launch.py
+[0.087s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot//urdf
+[0.087s] -- Installing: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot//urdf/my_first_robot.urdf
+[0.088s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot//config
+[0.088s] -- Installing: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot//config/my_first_robot_controllers.yaml
+[0.088s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/ament_index/resource_index/package_run_dependencies/my_first_robot
+[0.088s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/ament_index/resource_index/parent_prefix_path/my_first_robot
+[0.088s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/environment/ament_prefix_path.sh
+[0.088s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/environment/ament_prefix_path.dsv
+[0.089s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/environment/path.sh
+[0.089s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/environment/path.dsv
+[0.089s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/local_setup.bash
+[0.091s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/local_setup.sh
+[0.091s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/local_setup.zsh
+[0.092s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/local_setup.dsv
+[0.092s] -- Installing: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/package.dsv
+[0.092s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/ament_index/resource_index/packages/my_first_robot
+[0.092s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/cmake/my_first_robotConfig.cmake
+[0.092s] -- Up-to-date: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/cmake/my_first_robotConfig-version.cmake
+[0.092s] -- Installing: /home/student/Documents/j2/ros2_JOUR2/ros2_ws/install/my_first_robot/share/my_first_robot/package.xml
+[0.094s] Invoked command in '/home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/turtlebot3_ws/install/turtlebot3_teleop:/home/student/turtlebot3_ws/install/turtlebot3_parcours:/home/student/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/student/Documents/j2/ros2_JOUR2/ros2_ws/build/my_first_robot
