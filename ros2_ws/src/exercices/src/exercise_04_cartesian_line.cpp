@@ -15,7 +15,7 @@
 
 static const std::string PLANNING_GROUP = "fr3_arm";
 static const std::string LOGNAME = "exercise_04_cartesian_line";
-static const std::vector<std::string> CONTROLLERS(1, "panda_arm_controller");
+static const std::vector<std::string> CONTROLLERS(1, "fr3_arm_controller");
 
 // Helper: Plan and execute a motion to a target pose
 bool planAndExecute(
@@ -27,19 +27,31 @@ bool planAndExecute(
     const std::string& description)
 {
     // TODO : Plan the motion
-    if(plan_solution) {
-        visual_tools.publishTrajectoryLine(plan_solution.trajectory, joint_model_group_ptr);
+    planning_components->setStartStateToCurrentState();
+
+    planning_components->setGoal(goal_pose, "fr3_link8");
+
+    auto plan_solution1 = planning_components->plan();
+    
+
+    if(plan_solution1) {
+        visual_tools.publishTrajectoryLine(plan_solution1.trajectory, joint_model_group_ptr);
         visual_tools.trigger();
         visual_tools.prompt("Press 'Next' in RViz to EXECUTE the trajectory");
         // TODO : Execute the planned motion
+
+        // bool blocking = true;
+        // moveit_controller_manager::ExecutionStatus success = moveit_cpp_ptr->execute(plan_solution1.trajectory, blocking, CONTROLLERS); 
+        auto success = planning_components->execute();
+
         if (success) {
-            RCLCPP_INFO(logger,  "\u2713 %s execution succeeded!", description.c_str());
+            RCLCPP_INFO(rclcpp::get_logger(LOGNAME),  "\u2713 %s execution succeeded!", description.c_str());
         } else {
-            RCLCPP_WARN(logger, "\u2717 %s execution failed!", description.c_str());
+            RCLCPP_WARN(rclcpp::get_logger(LOGNAME), "\u2717 %s execution failed!", description.c_str());
         }
         return success;
     } else {
-        RCLCPP_ERROR(logger, "\u2717 %s planning failed!", description.c_str());
+        RCLCPP_ERROR(rclcpp::get_logger(LOGNAME), "\u2717 %s planning failed!", description.c_str());
         return false;
     }
 }
@@ -87,8 +99,18 @@ int main(int argc, char * argv[])
     // Plan 1: Move to a position
     RCLCPP_INFO(logger, "\n=== Planning motion to position ===");
 
-    // TODO : Define the target pose for the target pose
-    planAndExecute(planning_components, visual_tools, target_pose, joint_model_group_ptr, moveit_cpp_ptr, "Move to start pose");
+    // TODO : Define the target pose for the target pose geometry_msgs::msg::PoseStamped target_pose1;
+    geometry_msgs::msg::PoseStamped target_pose1;
+    target_pose1.header.frame_id = "fr3_link0";
+    target_pose1.pose.orientation.x = 1.0;
+    target_pose1.pose.orientation.y = 0.0;
+    target_pose1.pose.orientation.z = 0.0;
+    target_pose1.pose.orientation.w = 0.0;
+    target_pose1.pose.position.x = 0.35;
+    target_pose1.pose.position.y = -0.45;
+    target_pose1.pose.position.z = 0.05;
+
+    planAndExecute(planning_components, visual_tools, target_pose1, joint_model_group_ptr, moveit_cpp_ptr, "Move to start pose");
     
     // Keep node alive to see the results
     visual_tools.prompt("Press 'Next' to exit");

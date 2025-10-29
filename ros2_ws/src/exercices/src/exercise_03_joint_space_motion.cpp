@@ -30,14 +30,16 @@ bool planAndExecute(
 {
     // TODO: Plan the motion
     
-    if (plan_solution)
+    if (plan_solution1)
     {
-        visual_tools.publishTrajectoryLine(plan_solution.trajectory, joint_model_group_ptr);
+        visual_tools.publishTrajectoryLine(plan_solution1.trajectory, joint_model_group_ptr);
         visual_tools.trigger();
         visual_tools.prompt("Press 'Next' in RViz to EXECUTE the motion");
         RCLCPP_INFO(rclcpp::get_logger(LOGNAME), "Executing motion...");
 
         // TODO : Execute the planned motion 
+        bool blocking = true;
+        moveit_controller_manager::ExecutionStatus result = moveit_cpp_ptr->execute(plan_solution1.trajectory, blocking, CONTROLLERS); 
         
         if (success)
         {
